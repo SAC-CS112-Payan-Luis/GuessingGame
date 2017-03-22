@@ -24,7 +24,7 @@ public class GuessingGame
 				System.out.println("Would you like to enter new 'min' and 'max' numbers? (Y or N)");
 				newNumbers = sc.next();
 			}
-			
+			// This variable should be outside of the do loop
 			boolean goodValue;
 			
 			if (newNumbers.equalsIgnoreCase("y")) {
@@ -105,7 +105,7 @@ public class GuessingGame
 	}
 	
 	public static boolean askForAnotherRound(String prompt) {
-		
+		//how about while (answer.equalsIgnoreCase("y"))
 		while (true) {
 			
 			String answer;
